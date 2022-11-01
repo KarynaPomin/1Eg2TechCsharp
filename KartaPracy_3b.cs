@@ -96,9 +96,9 @@ namespace KartaPracy_3b
             }
 
             Console.WriteLine("Zadanie 8\nPodaj kwotę: ");
-            double W = int.Parse(Console.ReadLine());
+            double W = double.Parse(Console.ReadLine());
             Console.WriteLine("Podaj okres inwestycji w latach:");
-            double L = int.Parse(Console.ReadLine());
+            double L = double.Parse(Console.ReadLine());
             double wart = W;
             double wartM = 0;
             for (int i = 0; i < L * 12; i++)

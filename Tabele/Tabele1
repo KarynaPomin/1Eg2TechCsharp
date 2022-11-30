@@ -1,0 +1,137 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Tablice1
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int n = 10;
+            int pocz = 1;
+            int kon = 20;
+
+            int[] T = new int[n];
+            Random r = new Random();
+            for (int i = 0; i < n; i++)
+            {
+                T[i] = r.Next(pocz, kon);
+            }
+
+            for (int i = 0; i < n; i++)
+            {
+                Console.Write(T[i] + " ");
+            }
+
+            // Zad 1
+            //int n = 10;
+            //int pocz = 1;
+            //int kon = 20;
+            //int mak = pocz;
+
+            //int[] T = new int[n];
+            //Random r = new Random();
+            //for (int i = 0; i < n; i++)
+            //{
+            //    if (T[i] > maks)
+            //    {
+            //        maks = T[i];
+            //    }
+
+            //}
+            //Console.WriteLine(maks);
+
+            //Zad 5 
+
+
+            //int n = 10;
+            //int pocz = 1;
+            //int kon = 20;
+            //int mini = pocz;
+            //int maks = pocz;
+
+            //int[] T = new int[n];
+            //Random r = new Random();
+
+            //for (int i = 0; i < n; i++)
+            //{
+            //    if (T[i] > maks) maks = T[i];
+            //    if (T[i] < mini) mini = T[i];
+            //}
+            //Console.Write($"Różnieca wynosi: {maks - mini}");
+
+            //Zad 5 
+
+
+            //int n = 10;
+            //int pocz = 1;
+            //int kon = 20;
+            //int suma = 0;
+
+            //int[] T = new int[n];
+            //Random r = new Random();
+
+            //for (int i = 0; i < n; i++)
+            //{
+            //    T[i] = r.Next(pocz, kon);
+            //}
+
+            //for (int i = 0; i < n; i++)
+            //{
+            //    Console.Write(T[i] + " ");
+            //    suma += T[i ];
+            //} 
+
+            //Console.WriteLine();
+
+
+            //Console.Write(suma);
+
+            //// 7
+            //Console.WriteLine();
+
+            //int suma = 0;
+            //for (int i = 0; i < n; i++)
+            //{
+            //    suma += T[i];
+            //}
+
+            //Console.WriteLine(suma / n);
+
+            // 8 
+
+            //int p = 0;
+            //int np = 0;
+
+            //for (int i = 0; i < n; i++)
+            //{
+            //    if (i % 2 == 0) p += i;
+            //    else np += i;
+            //}
+
+            //if (np > p) Console.Write("Więcej jest liczb nieparzystych.");
+            //else Console.WriteLine("Więcej jest liczb parzystych.");
+
+            // 9
+
+
+            int l = 0;
+            //bool flaga = true;
+            for (int i = 0; i < n; i++)
+            {
+                if (T[i] % 2 == 0) break;
+            }
+            l++;
+
+            Console.WriteLine(l);
+
+            Console.ReadKey();
+
+        }
+
+       
+    }
+}

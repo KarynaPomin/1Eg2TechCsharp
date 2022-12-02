@@ -43,6 +43,16 @@ namespace Tablice1
 
             //}
             //Console.WriteLine(maks);
+            
+            // Zad 2
+            
+            //for (int i = 0; i < n; i++)
+            //{
+            //    if (T[i] < mini) mini = T[i];
+            //}
+
+            //Console.WriteLine();
+            //Console.WriteLine(mini);
 
             //Zad 5 
 

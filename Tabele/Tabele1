@@ -26,6 +26,8 @@ namespace Tablice1
                 Console.Write(T[i] + " ");
             }
 
+
+
             // Zad 1
             //int n = 10;
             //int pocz = 1;
@@ -43,7 +45,9 @@ namespace Tablice1
 
             //}
             //Console.WriteLine(maks);
-            
+           
+           
+           
             // Zad 2
             
             //for (int i = 0; i < n; i++)
@@ -54,8 +58,9 @@ namespace Tablice1
             //Console.WriteLine();
             //Console.WriteLine(mini);
 
-            //Zad 5 
 
+
+            //Zad 5 
 
             //int n = 10;
             //int pocz = 1;
@@ -73,8 +78,9 @@ namespace Tablice1
             //}
             //Console.Write($"Różnieca wynosi: {maks - mini}");
 
-            //Zad 6
 
+
+            //Zad 6
 
             //int n = 10;
             //int pocz = 1;
@@ -100,7 +106,10 @@ namespace Tablice1
 
             //Console.Write(suma);
 
-            //// 7
+
+
+            // Zad 7
+            
             //Console.WriteLine();
 
             //int suma = 0;
@@ -110,6 +119,8 @@ namespace Tablice1
             //}
 
             //Console.WriteLine(suma / n);
+
+
 
             // 8 
 
@@ -125,10 +136,10 @@ namespace Tablice1
             //if (np > p) Console.Write("Więcej jest liczb nieparzystych.");
             //else Console.WriteLine("Więcej jest liczb parzystych.");
 
+
+
             // 9
-
-
-=
+            
             int l = 0;
             for (int i = 0; i < n; i++)
             {
@@ -137,6 +148,35 @@ namespace Tablice1
 
             Console.WriteLine();
             Console.WriteLine($"Liczb pirwszych jest: {l}");
+            
+            
+            
+            // Zad 10
+
+            int mini = kon;
+            int maksi = pocz;
+            int v_mini = kon;
+            int v_maksi = pocz;
+
+            for (int i = 0; i < n; i++)
+            {
+                if (mini > T[i]) mini = T[i];
+                if (maksi < T[i]) maksi = T[i];
+
+            }
+
+            for (int i = 0; i < n; i++)
+            {
+                if (T[i] < v_mini && T[i] > mini) v_mini = T[i];
+                if (T[i] > v_maksi && T[i] < maksi) v_maksi = T[i]; 
+            }
+
+            Console.WriteLine();
+            Console.WriteLine($"Mini: {mini}");
+            Console.WriteLine($"V-c mini: {v_mini}");
+            Console.WriteLine($"Maksi: {maksi}");
+            Console.WriteLine($"V-c maksi: {v_maksi}");
+
 
             Console.ReadKey();
 

@@ -73,7 +73,7 @@ namespace Tablice1
             //}
             //Console.Write($"Różnieca wynosi: {maks - mini}");
 
-            //Zad 5 
+            //Zad 6
 
 
             //int n = 10;
@@ -128,15 +128,15 @@ namespace Tablice1
             // 9
 
 
+=
             int l = 0;
-            //bool flaga = true;
             for (int i = 0; i < n; i++)
             {
-                if (T[i] % 2 == 0) break;
+                if (T[i] % 2 != 0 && T[i] != 1)  l++;
             }
-            l++;
 
-            Console.WriteLine(l);
+            Console.WriteLine();
+            Console.WriteLine($"Liczb pirwszych jest: {l}");
 
             Console.ReadKey();
 

@@ -76,6 +76,26 @@ namespace Tablice1
 
 
 
+            // Zad 4
+
+            int mini = kon;
+            int ile_mini = 0;
+
+            for (int i = 0; i < n; i++)
+            {
+                if (T[i] < mini) mini = T[i];
+            }
+
+            for (int i = 0; i < n; i++)
+            {
+                if (T[i] == mini) ile_mini++;
+
+            }
+            Console.WriteLine();
+            Console.WriteLine($"Liczba mini to {mini}. Występuje {ile_mini} razy.");
+            
+            
+            
             //Zad 5 
 
             //int n = 10;

@@ -60,6 +60,22 @@ namespace Tablice1
 
 
 
+            // Zad 3
+
+            int maksi = pocz;
+            int ile_maksi = 0;
+
+            for (int i = 0; i < n; i++)
+            {
+                if (T[i] > maksi) maksi = T[i];
+                if (T[i] == maksi) ile_maksi++;
+            }
+
+            Console.WriteLine();
+            Console.WriteLine($"Liczby maksi występują {ile_maksi} razy.");
+
+
+
             //Zad 5 
 
             //int n = 10;

@@ -32,7 +32,7 @@ namespace KartaPracy_2a
             Console.WriteLine("Podaj drugą liczbę:");
             int b2 = int.Parse(Console.ReadLine());
 
-            if ((a2 + b2) / 2 > Math.Pow(a2 * b2, 1/3d))
+            if ((a2 + b2) / 2 > Math.Pow(a2 * b2, 1/2d))
             {
                 Console.WriteLine("Tak, średnia aretmetyczna jest większa.");
             }

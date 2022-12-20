@@ -121,21 +121,12 @@ namespace KartaPracy_3b
             Console.WriteLine(suma9);
 
             Console.WriteLine("Zadanie 10");
-            for (int i = 1; i < 1000; i++)
+             for (int i = 1; i < 1001; i++)
             {
-                if (i % 10 == Math.Sqrt(i))
+                if (i % 10 == Math.Sqrt(i) || i % 100 == Math.Sqrt(i))
                     {
                     Console.WriteLine(i);
                 }
-                else if (i % 100 == Math.Sqrt(i))
-                {
-                    Console.WriteLine(i);
-                }
-                else if (i % 1000 == Math.Sqrt(i))
-                {
-                    Console.WriteLine(i);
-                }
-
             }
         }
     }

@@ -106,30 +106,30 @@ namespace KartaPracy_2a
             
             
             Console.WriteLine("Zadanie 6\nPodaj trzy liczby, z których można zbudować trójkąt.");
-            int a6 = int.Parse(Console.ReadLine());
-            int b6 = int.Parse(Console.ReadLine());
-            int c6 = int.Parse(Console.ReadLine());
 
+             int a = int.Parse(Console.ReadLine());
+            int b = int.Parse(Console.ReadLine());
+            int c = int.Parse(Console.ReadLine());
 
-            if (Math.Sqrt(a6) == Math.Sqrt(b6) + Math.Sqrt(c6)|| Math.Sqrt(b6)== Math.Sqrt(a6) + Math.Sqrt(c6) || Math.Sqrt(c6) == Math.Sqrt(b6) + Math.Sqrt(a6))
-            { 
-                Console.WriteLine("Z podanych liczb powstanie trójkąt prostokątny.");
-            }
-
-            else if (Math.Sqrt(a6) > Math.Sqrt(b6) + Math.Sqrt(c6) || Math.Sqrt(b6) > Math.Sqrt(c6) + Math.Sqrt(a6) || Math.Sqrt(c6) > Math.Sqrt(a6) + Math.Sqrt(b6))
-            { 
-                Console.WriteLine("Z podanych liczb powstanie trójkąt rozwartokątny.");
-            }
-            else if (Math.Sqrt(a6) < Math.Sqrt(b6) + Math.Sqrt(c6) || Math.Sqrt(b6) < Math.Sqrt(a6) + Math.Sqrt(c6) || Math.Sqrt(c6) < Math.Sqrt(a6) + Math.Sqrt(b6))
+            if (a < b + c || b < a + c || c < a + b)
             {
-                Console.WriteLine("Z podanych liczb powstanie trójkąt ostrokątny.");
+                if (a * a + b * b == c * c || b * b + c * c == a * a || c * c + a * a == b * b)
+                {
+                    Console.WriteLine("Z podanych liczb powstanie trójkąt prostokątny.");
+                }
+                else if(a * a + b * b < c * c || b * b + c * c < a || a * a + c * c < b)
+                {
+                    Console.WriteLine("Z podanych liczb powstanie trójkąt rozwartokątny.");
+                }
+                else if(a * a + b * b > c * c || b * b + c * c > a || a * a + c * c > b)
+                {
+                    Console.WriteLine("Z podanych liczb powstanie trójkąt ostrokątny.");
+                }
             }
-
             else
             {
                 Console.WriteLine("Z podanych liczb nie powstanie prostokąt.");
             }
-
         }
     }
 }

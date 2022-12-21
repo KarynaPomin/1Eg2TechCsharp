@@ -117,11 +117,11 @@ namespace KartaPracy_2a
                 {
                     Console.WriteLine("Z podanych liczb powstanie trójkąt prostokątny.");
                 }
-                else if(a * a + b * b < c * c || b * b + c * c < a || a * a + c * c < b)
+                else if(a * a + b * b < c * c || b * b + c * c < a * a || a * a + c * c < b * b)
                 {
                     Console.WriteLine("Z podanych liczb powstanie trójkąt rozwartokątny.");
                 }
-                else if(a * a + b * b > c * c || b * b + c * c > a || a * a + c * c > b)
+                else if(a * a + b * b > c * c || b * b + c * c > a * a || a * a + c * c > b * b)
                 {
                     Console.WriteLine("Z podanych liczb powstanie trójkąt ostrokątny.");
                 }

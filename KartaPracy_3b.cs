@@ -16,14 +16,15 @@ namespace KartaPracy_3b
             
 
             Console.WriteLine("Zadanie 2\nLiczba:");
-            int n2 = int.Parse(Console.ReadLine());
-            for (int i = 1; i < n2*2; i++)
+            
+            for (int i = 0; i < 10; i++)
             {
-                if(i % 2 == 1)
+                if (i % 2 != 0)
                 {
                     Console.WriteLine(i*i);
                 }
             }
+
             
              
             Console.WriteLine("Zadanie 3");

@@ -154,8 +154,99 @@ namespace study
             Console.WriteLine($"{a7}/{b7} = {q7} ({d7}/{y7})");
 
             Console.WriteLine();
-
+          
             Console.WriteLine("Zadanie 8");
+            int temp1 = 0;
+
+            for (int i = 1; i < 10000; i++)
+            {
+                int suma = 0;
+                int suma1 = 0;
+                
+                for (int j = 1; j < i; j++)
+                {
+                    if (i % j == 0)
+                        suma += j;
+                }
+                for (int k = 1; k < suma; k++)
+                {
+                    if (suma % k == 0)
+                        suma1 += k;               
+                }
+                if (i == suma || temp1 == i)
+                    continue;
+                else if (i == suma1)
+                {
+                    Console.WriteLine($"{i} i {suma}");
+                    temp1 = suma;
+                }
+            }
+
+            Console.WriteLine();
+
+            Console.WriteLine("Zadanie 9");
+
+            int pierwsza = 0;
+            bool flaga = true;
+
+            for (int i = 10; i < 100; i++)
+            {
+                for (int j = 2; j < i / 2; j++)
+                {
+                    if (i % j == 0)
+                    {
+                        flaga = false;
+                        break;
+                    }
+
+                    else
+                    {
+                        pierwsza = i;
+                        flaga = true;
+                    }
+                }
+                if (flaga)
+                    Console.WriteLine($"Prawie pierwsza liczby {pierwsza} to {pierwsza * 2}");
+            }
+
+            Console.WriteLine();
+
+            Console.WriteLine("Zadanie 10");
+
+            int n10 = int.Parse(Console.ReadLine());
+
+            for (int i = 2; i < n10 / 2; i++)
+            {
+                int temp = n10 + 2;
+                bool flaga = true;
+                if (n10 % i == 0)
+                {
+                    Console.WriteLine("Liczba nie jest pierwsza.");
+                    flaga = false;
+                    break;
+                }
+                else
+                {
+                    for (int j = 2; j < temp / 2; j++)
+                    {
+                        if (temp % j == 0)
+                        {
+                            Console.WriteLine("Nie ma bliźniaka.");
+                            flaga = false;
+                            break;
+                        }
+                        else
+                            flaga = true;
+                    }
+                    if (flaga)
+                    {
+                        Console.WriteLine($"Liczba {n10} ma bliźniaka {temp}.");
+                        break;
+                    }
+                    else
+                        break;
+                }
+            }
 
 
 

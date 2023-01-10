@@ -233,20 +233,28 @@ namespace KartaPracy_6
 
             int n13 = int.Parse(Console.ReadLine());
             double suma13 = 0;
-            int a13 = 3;
-            int a = 1;
-            int b = 2;
-            int temp = 1;
-
-            for (int i = 1; i < n13 + 1; i++)
+            
+            for (int i = 1; i < n13; i++)
             {
-                suma13 += (double)(i * 2) / a13;
-                Console.WriteLine($"{i * 2}/{a13}");
-                a13 += 6 * temp + 1;
-                temp = a + b;
-                a = temp;
-                b++;
+                suma13 += i * 2 / Math.Pow(i, 3) + 2;
+                Console.WriteLine($"{i * 2} / {Math.Pow(i, 3) + 2}");
             }
+           
+            //  Wersja 1
+            //int a13 = 3;
+            //int a = 1;
+            //int b = 2;
+            //int temp = 1;
+
+            //for (int i = 1; i < n13 + 1; i++)
+            //{
+            //    suma13 += (double)(i * 2) / a13;
+            //   Console.WriteLine($"{i * 2}/{a13}");
+            //    a13 += 6 * temp + 1;
+            //   temp = a + b;
+            //    a = temp;
+            //    b++;
+            //}
             Console.WriteLine(Math.Round(suma13, 2));
 
             Console.WriteLine();

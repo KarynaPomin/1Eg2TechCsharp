@@ -75,3 +75,7 @@ foreach (int i in A)
 	Console.Write(i + " ")
 }
 
+for (int i = 0; i <A.Count; i++)
+{
+	Console.Write(A[i] + " ")
+}

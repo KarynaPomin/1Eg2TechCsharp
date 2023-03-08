@@ -42,3 +42,47 @@ int bigSuma(int[] T)
 	return suma;
 }
 Console.WriteLine(bigSuma(new int[] {4, 7, 8, 9}))
+
+//rekurencja - uwaga, nie urochamiać!
+
+void rekurencja()
+{
+	Console.WriteLine("YO");
+	rekurencja();
+}
+
+// rekurencja();
+
+void reku1(int n)
+{
+	if (n == 0) return;
+	Console.WriteLine(n);
+	reku1(n - 1);
+}
+reku1(5);
+	
+//////
+	
+void reku2(int n)
+{
+	if (n == 0) return;
+	reku2(n - 1);
+	Console.WriteLine(n);
+}
+reku2(5);
+
+// reku(5) --> reku(4)
+// reku(4) --> reku(3)
+// reku(3) --> reku(2)
+// reku(2) --> reku(1)
+// reku(1) --> reku(0)
+	
+/////
+	void reku2(int n)
+{
+	if (n == 0) return;
+	Console.WriteLine(n);
+	reku2(n - 1);
+	Console.WriteLine(n);
+}
+reku2(5);

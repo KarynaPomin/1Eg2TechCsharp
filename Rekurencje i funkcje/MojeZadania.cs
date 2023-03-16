@@ -25,4 +25,15 @@
 
             Console.WriteLine(SilniaReku(5));
             
-            // Zad. 2. 
+            // Zad. 2. Fibonacci
+            
+            int Fibo(int n)
+            {
+                int w;
+                if (n <= 2) return 1;
+                w = Fibo(n - 1);
+                w += Fibo(n - 2);
+                return w;
+            }
+            Console.Write("Wpisz: ");
+            Console.WriteLine(Fibo(int.Parse(Console.ReadLine()))); 

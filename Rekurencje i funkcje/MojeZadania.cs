@@ -1,5 +1,7 @@
             // Zad. 1. Napisz program, który wyznaczy silnię z liczby n sposobem rekurencyjnym.
-
+            
+            // SPOSÓB 1
+            
             int Factorial(int n)
             {
                 int w;
@@ -10,5 +12,17 @@
                 return w;
             }
             Console.WriteLine(Factorial(int.Parse(Console.ReadLine())));
+            
+            // SPOSÓB 2
+
+            int SilniaReku(int n)
+            {
+                Console.WriteLine($"({n} - 1) * {n}");
+                if (n == 1)
+                    return 1;
+                else return SilniaReku(n - 1) * n;
+            }
+
+            Console.WriteLine(SilniaReku(5));
             
             // Zad. 2. 

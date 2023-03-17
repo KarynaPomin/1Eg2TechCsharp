@@ -37,3 +37,14 @@
             }
             Console.Write("Wpisz: ");
             Console.WriteLine(Fibo(int.Parse(Console.ReadLine()))); 
+
+            // Zad. 3. Eukides
+
+            int Euklides(int a, int b)
+            {
+                if (b == 0) return a;
+                return Euklides(b, a % b);
+            }
+            int a = int.Parse(Console.ReadLine());
+            int b = int.Parse(Console.ReadLine());
+            Console.WriteLine(Euklides(a, b));

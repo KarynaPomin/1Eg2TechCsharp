@@ -48,3 +48,15 @@
             int a = int.Parse(Console.ReadLine());
             int b = int.Parse(Console.ReadLine());
             Console.WriteLine(Euklides(a, b));
+
+            // Zad. 4. Suma cyfr podanej liczby.
+            int suma(int n)
+            {
+                int s;
+                if (n == 0) return 0;
+                s = suma(n / 10);
+                s += n % 10;
+                Console.WriteLine($"{n} -- {s}");
+                return s;
+            }
+            Console.WriteLine(suma(int.Parse(Console.ReadLine())));

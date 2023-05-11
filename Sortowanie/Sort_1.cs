@@ -73,6 +73,20 @@ for (int i = 1; i < n; i++)
     T[j] = temp;
 }
 
+// MY //
+for (int i = 1; i < n; i++)
+{
+    for (int j = 0; j < i; j++)
+    {
+        while (T[i] < T[j])
+        {
+            int temp = T[i];
+            T[i] = T[j];
+            T[j] = temp;
+        }
+    }
+}
+////////
 
 // Sortowania w czasie liniowym - 0(n)
 

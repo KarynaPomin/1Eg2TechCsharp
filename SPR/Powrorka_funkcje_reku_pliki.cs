@@ -172,3 +172,8 @@
          zadanie.WriteLine(palindrom);
 
  zadanie.Close();
+
+// Odczytanie z pliku
+// StreamReader liczby = new StreamReader(@"C:");
+//while (!sr.EndOfStream)
+//    Console.WriteLine(sr.ReadLine() + " ");

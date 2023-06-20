@@ -29,7 +29,7 @@ for (int i = n-1; i >= 0; i--)
     }
 }
 
-/// 
+/// rosnąco
 int temp;
 for (int i = 0; i < T.Length; i++)
 {
@@ -41,6 +41,17 @@ for (int i = 0; i < T.Length; i++)
             T[j - 1] = temp;
         }
 }
+foreach (var item in T)
+    Console.Write(item + " ");
+
+/// malejąco
+for (int j = 1; j < T.Length - (i - 1); j++)
+    if (T[j - 1] < T[j])
+    {
+        temp = T[j];
+        T[j] = T[j - 1];
+        T[j - 1] = temp;
+        }
 foreach (var item in T)
     Console.Write(item + " ");
 

@@ -29,6 +29,21 @@ for (int i = n-1; i >= 0; i--)
     }
 }
 
+/// 
+int temp;
+for (int i = 0; i < T.Length; i++)
+{
+    for (int j = 1; j < T.Length - i; j++)
+        if (T[j] < T[j - 1])
+        {
+            temp = T[j];
+            T[j] = T[j - 1];
+            T[j - 1] = temp;
+        }
+}
+foreach (var item in T)
+    Console.Write(item + " ");
+
 // 2. Przez wybór (selection sort)
 //wybieramy najmniejszy i wstawiamy na początek
 

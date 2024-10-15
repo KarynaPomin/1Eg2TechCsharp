@@ -1,0 +1,12 @@
+Stwórz fasadę salonu urody, który będzie się składał z:
+
+- lokalu (obiekt z adresem, numerem telefonu oraz stawką czynszu)
+- osób zatrudnionych (W FASADZIE! - Lista obiektów typu Kosmetyczka, Fryzjerka oraz Manikjurzystka 
+  ( łącznie 4 osoby ze wszystkich stanowisk)
+- wyposażenie salonu (W FASADZIE! - Lista sprzętów i lista materiałów eksploatycyjnch np szampony, grzebienie itp)
+
+abstract class Pracownik {}
+class Kosmetyczka : Pracownik {}
+
+List<Pracownik> lista = new ();
+lista.add(new Kosmetyczka());
